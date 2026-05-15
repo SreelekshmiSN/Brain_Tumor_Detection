@@ -1,6 +1,6 @@
-# Brain_Tumor_Detection
 
-# Brain Tumor Detection using Deep Learning
+
+#  Brain Tumor Detection using DenseNet121
 
 ## Overview
 
