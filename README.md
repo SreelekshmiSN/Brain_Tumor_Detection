@@ -4,75 +4,111 @@
 
 ## Overview
 
-This project implements a deep learning-based Brain Tumor Detection system using MRI scan images.
-The model is built using TensorFlow/Keras with DenseNet121 Transfer Learning for multi-class classification of brain tumors.
+This project presents a Deep Learning-based Brain Tumor Detection and Classification system using MRI scan images.
 
-### The system can classify MRI images into the following categories:
+## The system classifies brain MRI images into four categories:
 
-Glioma
-Meningioma
-Pituitary Tumor
-No Tumor
+- Glioma Tumor
+- Meningioma Tumor
+- Pituitary Tumor
+- No Tumor
 
-### The project also includes:
+### The project combines:
+- Transfer Learning
+- Convolutional Neural Networks (CNN)
+- Attention Mechanisms
+- Regularization Techniques
+- Quantization Approaches
+- Batch Normalization
 
-Model training
-Evaluation metrics
-Visualization graphs
-Confusion matrix
-Prediction on custom MRI images
-Features
-Deep Learning-based tumor classification
-Transfer Learning using DenseNet121
+to improve classification accuracy and model performance.
+
+---
+
+## Tumor Classes
+
+glioma
+meningioma
+pituitary
+notumor
+
+## Key Features
+
+Multi-class Brain Tumor Classification
+DenseNet121 Transfer Learning
+CNN-based Feature Extraction
+Batch Normalization
+Self-Attention Block Integration
+Quantization Techniques
+Regularization for Overfitting Reduction
 Data Augmentation
-Model Evaluation & Accuracy Metrics
+Model Evaluation Metrics
 Confusion Matrix Visualization
+Accuracy & Loss Graphs
 Prediction with Confidence Score
-TensorFlow/Keras implementation
-Jupyter Notebook workflow
-Tech Stack
+
+### Technologies Used
 Python
-TensorFlow / Keras
+TensorFlow
+Keras
 NumPy
 OpenCV
 Matplotlib
 Seaborn
 Scikit-learn
 Jupyter Notebook
+Deep Learning Architecture
+Base Model
 
-## Dataset
+### The primary model uses:
 
-Dataset:Brain Tumor MRI Dataset(Kaggle)
+DenseNet121
+Pretrained on ImageNet
+Used for transfer learning
+Extracts deep image features efficiently
+Additional Deep Learning Components
 
-### The dataset contains MRI brain scan images categorized into:
+### The project further improves performance using:
 
-Training/
-    glioma/
-    meningioma/
-    pituitary/
-    notumor/
+1. Convolutional Neural Networks (CNN)
 
-Testing/
-    glioma/
-    meningioma/
-    pituitary/
-    notumor/
-Model Architecture
+Used for spatial feature extraction from MRI images.
 
-## The project uses:
+2. Batch Normalization
 
-DenseNet121 (Pretrained on ImageNet)
-Global Average Pooling
-Dropout Layer
-Dense Output Layer with Softmax Activation
-Training Details
-Parameter	Value
-Image Size	224x224
-Batch Size	32
-Epochs	10
-Optimizer	Adam
-Loss Function	Categorical Crossentropy
+Improves training stability and accelerates convergence.
 
+3. Self-Attention Block
+
+Enhances important region focus within MRI scans.
+
+4. Quantization Techniques
+
+Used for optimization and reduced computational complexity.
+
+5. Regularization Techniques
+
+Helps reduce overfitting and improve generalization.
+
+### Includes:
+
+Dropout
+Weight Regularization
+Dataset Structure
+Datasets/
+│
+├── Training/
+│   ├── glioma/
+│   ├── meningioma/
+│   ├── pituitary/
+│   └── notumor/
+│
+└── Testing/
+    ├── glioma/
+    ├── meningioma/
+    ├── pituitary/
+    └── notumor/
+    
 ### Project Structure
 
 Brain_Tumor_Detection/
@@ -86,10 +122,10 @@ Brain_Tumor_Detection/
 ├── LICENSE
 └── .gitignore
 
-## Installation
+### Installation
 
 Clone Repository
-git clone https://github.com/SreelekshmiSN/Brain_Tumor_Detection.git
+git clone https://github.com/YOUR_USERNAME/Brain_Tumor_Detection.git
 cd Brain_Tumor_Detection
 Create Environment
 conda create -n brainenv python=3.10
@@ -101,63 +137,79 @@ pip install scipy==1.10.1
 pip install opencv-python==4.7.0.72
 pip install matplotlib seaborn scikit-learn notebook
 Run Jupyter Notebook
-
-### jupyter notebook
+jupyter notebook
 
 Open:
 
 brain_tumor_detection.ipynb
+
 Model Training
 
-### Run the notebook cells sequentially to:
+### The notebook performs:
 
-Load dataset
-Preprocess images
-Train model
-Save trained model
+Image preprocessing
+Data augmentation
+CNN feature extraction
+DenseNet121 transfer learning
+Training and validation
+Model saving
 
-## Saved model:
+### Saved model:
 
 Models/brain_tumor_model_V2.keras
-Model Evaluation
+Evaluation Metrics
 
-## The project includes:
+### The project includes:
 
 Accuracy Score
+Precision
+Recall
 Validation Accuracy
-Loss Graphs
-Precision & Recall Curves
+Loss Curves
 Confusion Matrix
 Classification Report
-Prediction
+Visualization Outputs
+Training & Validation Accuracy
 
-The model can predict MRI images with confidence scores.
+Model training accuracy and validation accuracy are visualized using graphs.
 
-### Example Output:
+Training & Validation Loss
+
+Loss curves help analyze convergence and overfitting.
+
+Confusion Matrix
+
+Used for evaluating class-wise prediction performance.
+
+Prediction System
+
+### The model predicts MRI scan images and provides:
+
+Predicted Tumor Type
+Confidence Score
+
+Example:
 
 Predicted Class: glioma
 Confidence: 0.95
 Results
 
-The trained model achieved high classification accuracy on the testing dataset with effective multi-class prediction performance.
+### The trained model achieved strong classification performance on MRI brain tumor datasets using DenseNet121 combined with advanced deep learning optimization techniques.
 
-## Future Improvements
-
-Deploy as Web Application
-Real-time MRI Prediction
-Grad-CAM Visualization
+Future Improvements
+Real-time Brain MRI Detection
+Web Application Deployment
 Mobile App Integration
+Grad-CAM Visualization
 Medical Report Generation
+Edge Device Optimization
 
-## Author
+### Author
 
 Sreelekshmi S N
 
-## License
+### Deep Learning & Computer Vision Project
 
 This project is licensed under the MIT License.
-
-
-
 
 
