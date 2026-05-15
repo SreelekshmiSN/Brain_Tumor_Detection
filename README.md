@@ -204,6 +204,14 @@ Grad-CAM Visualization
 Medical Report Generation
 Edge Device Optimization
 
+### Dataset
+
+Due to GitHub storage limitations, the dataset is not uploaded directly to this repository.
+
+Download Dataset:
+https://drive.google.com/drive/folders/1bm8_p0FnEj9YaO0NFWMn3HJZnWnSyQLO?usp=sharing
+
+
 ### Author
 
 Sreelekshmi S N
